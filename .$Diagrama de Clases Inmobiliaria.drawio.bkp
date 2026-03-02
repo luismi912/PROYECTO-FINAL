@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
   <diagram name="Página-1" id="enbbplEefSCMd6Z8Ljhm">
-    <mxGraphModel dx="2696" dy="1795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2880" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -514,28 +514,6 @@
             <mxPoint x="-256" y="620" as="sourcePoint" />
             <mxPoint x="-460" y="515" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="dZuoRBIHvVRPiqblYLy9-1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="phrQTX1lFcV1Xemg9pBB-12">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-910" y="340" />
-              <mxPoint x="-910" y="105" />
-            </Array>
-            <mxPoint x="-910" y="340" as="sourcePoint" />
-            <mxPoint x="-70" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="dZuoRBIHvVRPiqblYLy9-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="EmpleadosSectores" vertex="1">
-          <mxGeometry height="120" width="180" x="-990" y="455" as="geometry" />
-        </mxCell>
-        <mxCell id="dZuoRBIHvVRPiqblYLy9-3" parent="dZuoRBIHvVRPiqblYLy9-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Str TipoContrato" vertex="1">
-          <mxGeometry height="30" width="180" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="dZuoRBIHvVRPiqblYLy9-4" parent="dZuoRBIHvVRPiqblYLy9-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="int JefesSectores" vertex="1">
-          <mxGeometry height="30" width="180" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="dZuoRBIHvVRPiqblYLy9-5" parent="dZuoRBIHvVRPiqblYLy9-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="JefesSectores _JefesSectores" vertex="1">
-          <mxGeometry height="30" width="180" y="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
