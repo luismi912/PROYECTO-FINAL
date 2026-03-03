@@ -36,11 +36,11 @@ foreach (var Telefonos in Lista_Telefonos)
 
 System.Console.WriteLine("BIENES INMUEBLES: " + "\n");
 var Lista_BienesInmuebles = new List<BienesInmuebles>();
-Lista_BienesInmuebles.Add(new Inmueble() { Id = 1, Nombre = "Casa Campestre", Descripcion = "Vivienda ubicada en zona rural", FechaAdquisicion = new DateTime(2019, 6, 15), PrecioCompra = 250000000m, ValorActual = 310000000m, MetrosCuadrados = 180m, Direccion = "Vereda El Rosal, Medellin", EstadoConservacion = "Excelente", Estrato = "4", NumeroHabitaciones = "4", NumeroBaños = "3", CodigoCUC = "CUC-001-2019", EncargosDeudas = "Libre de deudas" });
-Lista_BienesInmuebles.Add(new Inmueble() { Id = 2, Nombre = "Apartamento Centro", Descripcion = "Apartamento en zona urbana", FechaAdquisicion = new DateTime(2021, 3, 10), PrecioCompra = 180000000m, ValorActual = 210000000m, MetrosCuadrados = 85m, Direccion = "Cra 45 #50-20, Medellin", EstadoConservacion = "Bueno", Estrato = "5", NumeroHabitaciones = "3", NumeroBaños = "2", CodigoCUC = "CUC-002-2021", EncargosDeudas = "Hipoteca vigente" });
-Lista_BienesInmuebles.Add(new Inmueble() { Id = 3, Nombre = "Local Comercial", Descripcion = "Local en centro comercial", FechaAdquisicion = new DateTime(2018, 11, 5), PrecioCompra = 320000000m, ValorActual = 400000000m, MetrosCuadrados = 120m, Direccion = "CC Mayorca Local 210, Sabaneta", EstadoConservacion = "Excelente", Estrato = "6", NumeroHabitaciones = "N/A", NumeroBaños = "1", CodigoCUC = "CUC-003-2018", EncargosDeudas = "Libre de deudas" });
-Lista_BienesInmuebles.Add(new Inmueble() { Id = 4, Nombre = "Bodega Industrial", Descripcion = "Bodega para almacenamiento", FechaAdquisicion = new DateTime(2017, 9, 18), PrecioCompra = 600000000m, ValorActual = 750000000m, MetrosCuadrados = 450m, Direccion = "Zona Industrial Itagui", EstadoConservacion = "Regular", Estrato = "3", NumeroHabitaciones = "N/A", NumeroBaños = "2", CodigoCUC = "CUC-004-2017", EncargosDeudas = "Embargo parcial" });
-Lista_BienesInmuebles.Add(new Inmueble() { Id = 5, Nombre = "Finca Recreativa", Descripcion = "Finca para descanso y eventos", FechaAdquisicion = new DateTime(2022, 1, 25), PrecioCompra = 450000000m, ValorActual = 520000000m, MetrosCuadrados = 600m, Direccion = "Guarne Antioquia", EstadoConservacion = "Bueno", Estrato = "2", NumeroHabitaciones = "5", NumeroBaños = "4", CodigoCUC = "CUC-005-2022", EncargosDeudas = "Libre de deudas" });
+Lista_BienesInmuebles.Add(new BienesInmuebles() { Id = 1, Nombre = "Casa Campestre", Descripcion = "Vivienda ubicada en zona rural", FechaAdquisicion = new DateTime(2019, 6, 15), PrecioCompra = 250000000m, ValorActual = 310000000m, MetrosCuadrados = 180m, Direccion = "Vereda El Rosal, Medellin", EstadoConservacion = "Excelente", Estrato = "4", NumeroHabitaciones = "4", NumeroBaños = "3", CodigoCUC = "CUC-001-2019", EncargosDeudas = "Libre de deudas" });
+Lista_BienesInmuebles.Add(new BienesInmuebles() { Id = 2, Nombre = "Apartamento Centro", Descripcion = "Apartamento en zona urbana", FechaAdquisicion = new DateTime(2021, 3, 10), PrecioCompra = 180000000m, ValorActual = 210000000m, MetrosCuadrados = 85m, Direccion = "Cra 45 #50-20, Medellin", EstadoConservacion = "Bueno", Estrato = "5", NumeroHabitaciones = "3", NumeroBaños = "2", CodigoCUC = "CUC-002-2021", EncargosDeudas = "Hipoteca vigente" });
+Lista_BienesInmuebles.Add(new BienesInmuebles() { Id = 3, Nombre = "Local Comercial", Descripcion = "Local en centro comercial", FechaAdquisicion = new DateTime(2018, 11, 5), PrecioCompra = 320000000m, ValorActual = 400000000m, MetrosCuadrados = 120m, Direccion = "CC Mayorca Local 210, Sabaneta", EstadoConservacion = "Excelente", Estrato = "6", NumeroHabitaciones = "N/A", NumeroBaños = "1", CodigoCUC = "CUC-003-2018", EncargosDeudas = "Libre de deudas" });
+Lista_BienesInmuebles.Add(new BienesInmuebles() { Id = 4, Nombre = "Bodega Industrial", Descripcion = "Bodega para almacenamiento", FechaAdquisicion = new DateTime(2017, 9, 18), PrecioCompra = 600000000m, ValorActual = 750000000m, MetrosCuadrados = 450m, Direccion = "Zona Industrial Itagui", EstadoConservacion = "Regular", Estrato = "3", NumeroHabitaciones = "N/A", NumeroBaños = "2", CodigoCUC = "CUC-004-2017", EncargosDeudas = "Embargo parcial" });
+Lista_BienesInmuebles.Add(new BienesInmuebles() { Id = 5, Nombre = "Finca Recreativa", Descripcion = "Finca para descanso y eventos", FechaAdquisicion = new DateTime(2022, 1, 25), PrecioCompra = 450000000m, ValorActual = 520000000m, MetrosCuadrados = 600m, Direccion = "Guarne Antioquia", EstadoConservacion = "Bueno", Estrato = "2", NumeroHabitaciones = "5", NumeroBaños = "4", CodigoCUC = "CUC-005-2022", EncargosDeudas = "Libre de deudas" });
 foreach (var Bienes in Lista_BienesInmuebles)
 {
     System.Console.WriteLine(Bienes.Id + " | " + Bienes.Nombre + " | " + Bienes.Descripcion + " | " + Bienes.FechaAdquisicion + " | " + Bienes.PrecioCompra + " | " + Bienes.ValorActual + " | " + Bienes.MetrosCuadrados + " | " + Bienes.Direccion + " | " + Bienes.EstadoConservacion + " | " + Bienes.Estrato + " | " + Bienes.NumeroHabitaciones + " | " + Bienes.NumeroBaños + " | " + Bienes.CodigoCUC + " | " + Bienes.EncargosDeudas);
@@ -108,11 +108,11 @@ foreach (var Ciudad in Lista_Ciudades)
 
 System.Console.WriteLine("LISTA DE ADMINISTRADORES: " + "\n");
 var Lista_AdministradoresCiudades = new List<AdministradoresCiudades>();
-Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Id = 1, Cedula = "132443242", Nombre = "Luis Alberto", Apellido = "Arango Martinez", Genero = 'M', Correo = "Luisalberto@Gmail.com", FechaNacimiento = new DateTime(2002,08,19), Sueldo = 7500000,FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Diurna", Presupuesto = 32500000.0m});
-Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Id = 2, Cedula = "214312341", Nombre = "Gilma Rosa", Apellido = "Garcia Meneses", Genero = 'F', Correo = "GilmaRosa@Gmail.com", FechaNacimiento = new DateTime(2000,02,10), FechaRegistro = DateTime.Now, Sueldo = 8500000, Estado = true, Jornada = "Especial", Presupuesto = 33500000.0m});
-Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Id = 3, Cedula = "512341234", Nombre = "Luis Miguel", Apellido = "Arango Garcia", Genero = 'M', Correo = "LuisMiguel@Gmail.com", FechaNacimiento = new DateTime(2004,03,11), FechaRegistro = DateTime.Now, Sueldo = 4500000, Estado = true, Jornada = "Parcial", Presupuesto = 34500000.0m});
-Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Id = 4, Cedula = "124312433", Nombre = "Maria Camila", Apellido = "Arango Martinez", Genero = 'F', Correo = "MariaCamila@Gmail.com", FechaNacimiento = new DateTime(2003,11,11), FechaRegistro = DateTime.Now, Sueldo = 5500000, Estado = true, Jornada = "Diurna", Presupuesto = 355500000.0m});
-Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Id = 5, Cedula = "523412123", Nombre = "Valentina Sofia", Apellido = "Martinez Ocampo", Genero = 'F', Correo = "ValentinaSofia@Gmail.com", FechaNacimiento = new DateTime(2005,02,12), FechaRegistro = DateTime.Now, Sueldo = 3500000, Estado = true, Jornada = "Continua", Presupuesto = 32500000.0m});
+Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Cedula = "132443242", Nombre = "Luis Alberto", Apellido = "Arango Martinez", Genero = 'M', Correo = "Luisalberto@Gmail.com", FechaNacimiento = new DateTime(2002,08,19), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Diurna", Presupuesto = 32500000.0m});
+Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Cedula = "214312341", Nombre = "Gilma Rosa", Apellido = "Garcia Meneses", Genero = 'F', Correo = "GilmaRosa@Gmail.com", FechaNacimiento = new DateTime(2000,02,10), FechaRegistro = DateTime.Now, Sueldo = 8500000, Estado = true, Jornada = "Especial", Presupuesto = 33500000.0m});
+Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Cedula = "512341234", Nombre = "Luis Miguel", Apellido = "Arango Garcia", Genero = 'M', Correo = "LuisMiguel@Gmail.com", FechaNacimiento = new DateTime(2004,03,11), FechaRegistro = DateTime.Now, Sueldo = 4500000, Estado = true, Jornada = "Parcial", Presupuesto = 34500000.0m});
+Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Cedula = "124312433", Nombre = "Maria Camila", Apellido = "Arango Martinez", Genero = 'F', Correo = "MariaCamila@Gmail.com", FechaNacimiento = new DateTime(2003,11,11), FechaRegistro = DateTime.Now, Sueldo = 5500000, Estado = true, Jornada = "Diurna", Presupuesto = 355500000.0m});
+Lista_AdministradoresCiudades.Add(new AdministradoresCiudades() {Cedula = "523412123", Nombre = "Valentina Sofia", Apellido = "Martinez Ocampo", Genero = 'F', Correo = "ValentinaSofia@Gmail.com", FechaNacimiento = new DateTime(2005,02,12), FechaRegistro = DateTime.Now, Sueldo = 3500000, Estado = true, Jornada = "Continua", Presupuesto = 32500000.0m});
 foreach (var Admins in Lista_AdministradoresCiudades)
 {
     System.Console.WriteLine(Admins.Id + " | " + Admins.Cedula + " | " + Admins.Nombre + " | "  + Admins.Apellido + " | " + Admins.Genero + " | " + Admins.Correo + " | " + Admins.FechaNacimiento + " | " + Admins.FechaRegistro + " | " + Admins.Presupuesto);
@@ -132,11 +132,11 @@ foreach (var Departamento in Lista_Departamentos)
 
 System.Console.WriteLine("JEFES DE SECTORES: " + "\n");
 var Lista_JefesSectores = new List<JefesSectores>();
-Lista_JefesSectores.Add(new JefesSectores() {Id = 6, Cedula = "901234567", Nombre = "Ricardo", Apellido = "Montoya Perez", Genero = 'M', Correo = "Ricardo@gmail.com", FechaNacimiento = new DateTime(1985,03,12), FechaRegistro = DateTime.Now, Sueldo = 2500000, Estado = true, Jornada = "Diurna", PresupuestoSector = 4500000.0m});
-Lista_JefesSectores.Add(new JefesSectores() {Id = 7, Cedula = "902345678", Nombre = "Patricia", Apellido = "Gomez Herrera", Genero = 'F', Correo = "Patricia@gmail.com", FechaNacimiento = new DateTime(1988,07,25), FechaRegistro = DateTime.Now, Sueldo = 3500000, Estado = true, Jornada = "Mixta". PresupuestoSector = 3500000.0m});
-Lista_JefesSectores.Add(new JefesSectores() {Id = 8, Cedula = "903456789", Nombre = "Fernando", Apellido = "Rios Salgado", Genero = 'M', Correo = "Fernando@gmail.com", FechaNacimiento = new DateTime(1982,11,08), FechaRegistro = DateTime.Now, Sueldo = 2300000, Estado = false, Jornada = "Nocturna", PresupuestoSector = 2500000.0m});
-Lista_JefesSectores.Add(new JefesSectores() {Id = 9, Cedula = "904567890", Nombre = "Claudia", Apellido = "Martinez León", Genero = 'F', Correo = "Claudia@gmail.com", FechaNacimiento = new DateTime(1990,01,17), FechaRegistro = DateTime.Now, Sueldo = 3200000, Estado = true, Jornada = "Ordinaria", PresupuestoSector = 1500000.0m});
-Lista_JefesSectores.Add(new JefesSectores() {Id = 10, Cedula = "905678901", Nombre = "Hector", Apellido = "Suarez Medina", Genero = 'M', Correo = "Hector@gmail.com", FechaNacimiento = new DateTime(1987,09,03), FechaRegistro = DateTime.Now, Sueldo = 2200000, Estado = false, Jornada = "Nocturna", PresupuestoSector = 4500000.0m});
+Lista_JefesSectores.Add(new JefesSectores() {Cedula = "901234567", Nombre = "Ricardo", Apellido = "Montoya Perez", Genero = 'M', Correo = "Ricardo@gmail.com", FechaNacimiento = new DateTime(1985,03,12), FechaRegistro = DateTime.Now, Sueldo = 2500000, Estado = true, Jornada = "Diurna", PresupuestoSector = 4500000.0m});
+Lista_JefesSectores.Add(new JefesSectores() {Cedula = "902345678", Nombre = "Patricia", Apellido = "Gomez Herrera", Genero = 'F', Correo = "Patricia@gmail.com", FechaNacimiento = new DateTime(1988,07,25), FechaRegistro = DateTime.Now, Sueldo = 3500000, Estado = true, Jornada = "Mixta", PresupuestoSector = 3500000.0m});
+Lista_JefesSectores.Add(new JefesSectores() {Cedula = "903456789", Nombre = "Fernando", Apellido = "Rios Salgado", Genero = 'M', Correo = "Fernando@gmail.com", FechaNacimiento = new DateTime(1982,11,08), FechaRegistro = DateTime.Now, Sueldo = 2300000, Estado = false, Jornada = "Nocturna", PresupuestoSector = 2500000.0m});
+Lista_JefesSectores.Add(new JefesSectores() {Cedula = "904567890", Nombre = "Claudia", Apellido = "Martinez León", Genero = 'F', Correo = "Claudia@gmail.com", FechaNacimiento = new DateTime(1990,01,17), FechaRegistro = DateTime.Now, Sueldo = 3200000, Estado = true, Jornada = "Ordinaria", PresupuestoSector = 1500000.0m});
+Lista_JefesSectores.Add(new JefesSectores() {Cedula = "905678901", Nombre = "Hector", Apellido = "Suarez Medina", Genero = 'M', Correo = "Hector@gmail.com", FechaNacimiento = new DateTime(1987,09,03), FechaRegistro = DateTime.Now, Sueldo = 2200000, Estado = false, Jornada = "Nocturna", PresupuestoSector = 4500000.0m});
 foreach (var Jefes in Lista_JefesSectores)
 {
     System.Console.WriteLine(Jefes.Id + " | " + Jefes.Cedula + " | " + Jefes.Nombre + " | "  + Jefes.Apellido + " | " + Jefes.Genero + " | " + Jefes.Correo + " | " + Jefes.FechaNacimiento + " | " + Jefes.FechaRegistro + " | " + Jefes.PresupuestoSector);    
@@ -144,11 +144,11 @@ foreach (var Jefes in Lista_JefesSectores)
 
 System.Console.WriteLine("EMPLEADOS DE SECTORES: " + "\n");
 var Lista_EmpleadosSectores = new List<EmpleadosSectores>();
-Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Id = 11, Cedula = "801234567", Nombre = "Natalia", Apellido = "Castillo Ramos", Genero = 'F', Correo = "Natalia@gmail.com", FechaNacimiento = new DateTime(1999,04,10), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Diurna"});
-Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Id = 12, Cedula = "802345678", Nombre = "Juan Diego", Apellido = "Lopez Vargas", Genero = 'M', Correo = "Juandiego@gmail.com", FechaNacimiento = new DateTime(2000,06,21), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Nocturna"});
-Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Id = 13, Cedula = "803456789", Nombre = "Sofia", Apellido = "Ramirez Castro", Genero = 'F', Correo = "Sofia@gmail.com", FechaNacimiento = new DateTime(1998,12,14), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Ordinaria"});
-Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Id = 14, Cedula = "804567890", Nombre = "Miguel Angel", Apellido = "Torres Peña", Genero = 'M', Correo = "Miguel@gmail.com", FechaNacimiento = new DateTime(1997,02,28), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Parcial"});
-Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Id = 15, Cedula = "805678901", Nombre = "Laura", Apellido = "Herrera Soto", Genero = 'F', Correo = "Laura@gmail.com", FechaNacimiento = new DateTime(2001,10,05), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Ordinaria"});
+Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Cedula = "801234567", Nombre = "Natalia", Apellido = "Castillo Ramos", Genero = 'F', Correo = "Natalia@gmail.com", FechaNacimiento = new DateTime(1999,04,10), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Diurna"});
+Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Cedula = "802345678", Nombre = "Juan Diego", Apellido = "Lopez Vargas", Genero = 'M', Correo = "Juandiego@gmail.com", FechaNacimiento = new DateTime(2000,06,21), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Nocturna"});
+Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Cedula = "803456789", Nombre = "Sofia", Apellido = "Ramirez Castro", Genero = 'F', Correo = "Sofia@gmail.com", FechaNacimiento = new DateTime(1998,12,14), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Ordinaria"});
+Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Cedula = "804567890", Nombre = "Miguel Angel", Apellido = "Torres Peña", Genero = 'M', Correo = "Miguel@gmail.com", FechaNacimiento = new DateTime(1997,02,28), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Parcial"});
+Lista_EmpleadosSectores.Add(new EmpleadosSectores() {Cedula = "805678901", Nombre = "Laura", Apellido = "Herrera Soto", Genero = 'F', Correo = "Laura@gmail.com", FechaNacimiento = new DateTime(2001,10,05), FechaRegistro = DateTime.Now, Sueldo = 7500000, Estado = true, Jornada = "Ordinaria"});
 foreach (var Empleados in Lista_EmpleadosSectores)
 {
     System.Console.WriteLine(Empleados.Id + " | " + Empleados.Cedula + " | " + Empleados.Nombre + " | "  + Empleados.Apellido + " | " + Empleados.Genero + " | " + Empleados.Correo + " | " + Empleados.FechaNacimiento + " | " + Empleados.FechaRegistro + " | " + Empleados.TipoContrato);    
@@ -156,11 +156,11 @@ foreach (var Empleados in Lista_EmpleadosSectores)
 
 System.Console.WriteLine("SECTORES: " + "\n");
 var Lista_Sectores = new List<Sectores>();
-Lista_Sectores.Add(new Sector() { Id = 1, Nombre = "Gestion Integral Inmobiliaria", Estado = true, FechaCreacion = new DateTime(2016, 3, 14) });
-Lista_Sectores.Add(new Sector() { Id = 2, Nombre = "Estrategia y Desarrollo Inmobiliario", Estado = true, FechaCreacion = new DateTime(2017, 7, 22) });
-Lista_Sectores.Add(new Sector() { Id = 3, Nombre = "Operaciones y Administracion de Activos", Estado = true, FechaCreacion = new DateTime(2018, 1, 9) });
-Lista_Sectores.Add(new Sector() { Id = 4, Nombre = "Planeacion y Expansión Territorial", Estado = true, FechaCreacion = new DateTime(2019, 5, 30) });
-Lista_Sectores.Add(new Sector() { Id = 5, Nombre = "Servicios Corporativos Inmobiliarios", Estado = false, FechaCreacion = new DateTime(2020, 10, 12) });
+Lista_Sectores.Add(new Sectores() { Id = 1, Nombre = "Gestion Integral Inmobiliaria", Estado = true, FechaCreacion = new DateTime(2016, 3, 14) });
+Lista_Sectores.Add(new Sectores() { Id = 2, Nombre = "Estrategia y Desarrollo Inmobiliario", Estado = true, FechaCreacion = new DateTime(2017, 7, 22) });
+Lista_Sectores.Add(new Sectores() { Id = 3, Nombre = "Operaciones y Administracion de Activos", Estado = true, FechaCreacion = new DateTime(2018, 1, 9) });
+Lista_Sectores.Add(new Sectores() { Id = 4, Nombre = "Planeacion y Expansión Territorial", Estado = true, FechaCreacion = new DateTime(2019, 5, 30) });
+Lista_Sectores.Add(new Sectores() { Id = 5, Nombre = "Servicios Corporativos Inmobiliarios", Estado = false, FechaCreacion = new DateTime(2020, 10, 12) });
 foreach (var Sector in Lista_Sectores)
 {
     System.Console.WriteLine(Sector.Id + " | " + Sector.Nombre + " | " + Sector.Estado + " | " + Sector.FechaCreacion);
@@ -189,6 +189,43 @@ foreach (var Propiedad in Lista_Propiedades)
 {
     System.Console.WriteLine(Propiedad.Id + " | " + Propiedad.NumeroHabitaciones + " | " + Propiedad.NumeroBaños + " | " + Propiedad.Patio + " | " + Propiedad.Entradas + " | " + Propiedad.Pisos + " | " + Propiedad.AñoConstruccion + " | " + Propiedad.ValorPropiedad + " | " + Propiedad.ValorArriendo + " | " + Propiedad.Estado);
 }
+
+System.Console.WriteLine("CLIENTES: " + "\n");
+var Lista_Clientes = new List<Clientes>();
+Lista_Clientes.Add(new Clientes() {Cedula = "1018456321", Nombre = "Laura", Apellido = "Gomez", Genero = 'F', Correo = "laura.gomez@gmail.com", FechaNacimiento = new DateTime(1990, 5, 14), FechaRegistro = DateTime.Now, PorcentajeComision = 3.5m, CantidadContratos = 2, MotivoVenta = "Inversion en nuevo proyecto" });
+Lista_Clientes.Add(new Clientes() {Cedula = "1032678945", Nombre = "Andres", Apellido = "Martinez", Genero = 'M', Correo = "andres.martinez@gmail.com", FechaNacimiento = new DateTime(1985, 8, 22), FechaRegistro = DateTime.Now, PorcentajeComision = 2.8m, CantidadContratos = 5, MotivoVenta = "Cambio de ciudad" });
+Lista_Clientes.Add(new Clientes() {Cedula = "1032678945", Nombre = "Andres", Apellido = "Martinez", Genero = 'M', Correo = "andres.martinez@gmail.com", FechaNacimiento = new DateTime(1985, 8, 22), FechaRegistro = DateTime.Now, PorcentajeComision = 2.8m, CantidadContratos = 5, MotivoVenta = "Cambio de ciudad" });
+Lista_Clientes.Add(new Clientes() {Cedula = "1098765432", Nombre = "Sebastian", Apellido = "Hernandez", Genero = 'M', Correo = "sebastian.hernandez@gmail.com", FechaNacimiento = new DateTime(1988, 11, 30), FechaRegistro = DateTime.Now, PorcentajeComision = 3.0m, CantidadContratos = 3, MotivoVenta = "Necesidad de liquidez" });
+Lista_Clientes.Add(new Clientes() {Cedula = "1029384756", Nombre = "Valentina", Apellido = "Morales", Genero = 'F', Correo = "valentina.morales@gmail.com", FechaNacimiento = new DateTime(1995, 1, 18), FechaRegistro = DateTime.Now, PorcentajeComision = 2.5m, CantidadContratos = 4, MotivoVenta = "Compra de vivienda mas grande" });
+foreach (var Cliente in Lista_Clientes)
+{
+    System.Console.WriteLine(Cliente.Id + " | " + Cliente.Cedula + " | " + Cliente.Nombre + " | "  + Cliente.Apellido + " | " + Cliente.Genero + " | " + Cliente.Correo + " | " + Cliente.FechaNacimiento + " | " + Cliente.FechaRegistro + " | " + Cliente.PorcentajeComision + " | " + Cliente.CantidadContratos + " | " + Cliente.MotivoVenta);
+}
+
+System.Console.WriteLine("CODEUDORES: " + "\n");
+var Lista_Codeudores = new List<Codeudores>();
+Lista_Codeudores.Add(new Codeudores() {Cedula = "1012345678", Nombre = "Andres Felipe", Apellido = "Gomez Rios", Genero = 'M', Correo = "andresgomez@gmail.com", FechaNacimiento = new DateTime(1995, 03, 12), FechaRegistro = DateTime.Now });
+Lista_Codeudores.Add(new Codeudores() {Cedula = "1023456789", Nombre = "Maria Fernanda", Apellido = "Lopez Martinez", Genero = 'F', Correo = "marialopez@gmail.com", FechaNacimiento = new DateTime(1998, 07, 25), FechaRegistro = DateTime.Now });
+Lista_Codeudores.Add(new Codeudores() {Cedula = "1034567890", Nombre = "Juan Esteban", Apellido = "Cardona Perez", Genero = 'M', Correo = "juancardona@gmail.com", FechaNacimiento = new DateTime(1992, 11, 05), FechaRegistro = DateTime.Now });
+Lista_Codeudores.Add(new Codeudores() {Cedula = "1045678901", Nombre = "Laura Sofia", Apellido = "Ramirez Torres", Genero = 'F', Correo = "lauraramirez@gmail.com", FechaNacimiento = new DateTime(1996, 01, 18), FechaRegistro = DateTime.Now });
+Lista_Codeudores.Add(new Codeudores() {Cedula = "1056789012", Nombre = "Sebastian", Apellido = "Hernandez Castro", Genero = 'M', Correo = "sebastianh@gmail.com", FechaNacimiento = new DateTime(1994, 09, 30), FechaRegistro = DateTime.Now });
+foreach (var Codeudor in Lista_Codeudores)
+{
+    System.Console.WriteLine(Codeudor.Id + " | " + Codeudor.Cedula + " | " + Codeudor.Nombre + " | "  + Codeudor.Apellido + " | " + Codeudor.Genero + " | " + Codeudor.Correo + " | " + Codeudor.FechaNacimiento + " | " + Codeudor.FechaRegistro);
+}
+
+System.Console.WriteLine("EMPLEADO Y COMPRADORES: " + "\n");
+var Lista_EmpleadosCompradores = new List<EmpleadosCompradores>();
+Lista_EmpleadosCompradores.Add(new EmpleadosCompradores () {Id = 1, FechaAsesoramiento = new DateTime(2006, 02, 13)});
+Lista_EmpleadosCompradores.Add(new EmpleadosCompradores () {Id = 1, FechaAsesoramiento = new DateTime(2002, 01, 20)});
+Lista_EmpleadosCompradores.Add(new EmpleadosCompradores () {Id = 1, FechaAsesoramiento = new DateTime(2001, 11, 22)});
+Lista_EmpleadosCompradores.Add(new EmpleadosCompradores () {Id = 1, FechaAsesoramiento = new DateTime(2009, 10, 13)});
+Lista_EmpleadosCompradores.Add(new EmpleadosCompradores () {Id = 1, FechaAsesoramiento = new DateTime(2022, 03, 16)});
+foreach (var EmpleadoComprador in Lista_EmpleadosCompradores)
+{
+    System.Console.WriteLine(EmpleadoComprador.Id + " | " + EmpleadoComprador.FechaAsesoramiento);
+}
+
 public class EstadosCiviles
 {
     public int Id {get;set;}
@@ -207,6 +244,7 @@ public class Nacionalidades
 
 public class Personas
 {
+    public static int Contador = 0;
     public int Id {get;set;}
     public String? Cedula {get;set;}
     public String? Nombre {get;set;}
@@ -224,6 +262,11 @@ public class Personas
     public List<Direcciones>? Direcciones {get;set;}
     public List<ExpedientesFinancieros>? ExpedientesFinancieros {get;set;}
     public List<ExpedientesLaborales>? ExpedientesLaborales {get;set;}
+
+    public Personas ()
+    {
+        Id = Contador++;
+    }
 }
 
 public class ExpedientesLaborales
@@ -338,9 +381,12 @@ public class JefesSectores : Trabajadores
 {
     public decimal PresupuestoSector {get;set;}
     public int AdministradorCiudad {get;set;}
+    public int Sector {get;set;}
 
+    public Sectores? _Sectores {get;set;}
     public AdministradoresCiudades? _AdministradorCiudad {get;set;}
     public List<EmpleadosSectores>? EmpleadosSectores {get;set;}
+    public List<Contratos>? Contratos {get;set;}
 }
 
 public class EmpleadosSectores : Trabajadores, IcalcularSalario
@@ -406,17 +452,50 @@ public class Sectores
 
     public Departamentos? _Departamento {get;set;}
     public JefesSectores? _JefeSector {get;set;}
-    List<EmpleadosSectores> EmpleadosSectores {get;set;}
+    public List<EmpleadosSectores>? EmpleadosSectores {get;set;}
+}
+
+public class Codeudores : Personas
+{
+    public int Comprador {get;set;}
+
+    public Compradores? _Compradores {get;set;}
+    public List<Contratos>? Contratos {get;set;}
+}
+
+public class EmpleadosCompradores
+{
+    public int Id {get;set;}
+    public DateTime FechaAsesoramiento {get;set;}
+    public int Comprador {get;set;}
+    public int Empleado {get;set;}
+
+    public Compradores? _Comprador {get;set;}
+    public EmpleadosSectores? EmpleadoSector {get;set;}
+}
+
+public class Compradores : Personas
+{
+    public List<Contratos>? Contratos {get;set;}
+    public List<Codeudores>? Codeudores {get;set;}    
 }
 
 public class TiposPropiedades
 {
     public int Id {get;set;}
     public String? Nombre {get;set;}
-    List<Propiedades> Propiedades {get;set;}
+    List<Propiedades>? Propiedades {get;set;}
+}
+
+public class Clientes : Personas
+{
+    public decimal PorcentajeComision {get;set;}
+    public int CantidadContratos {get;set;}
+    public String? PrioridadCliente {get;set;}
+    public String? MotivoVenta {get;set;}
 }
 public class Propiedades
-{
+{ 
     public int Id {get;set;}
     public int NumeroHabitaciones {get;set;}
     public int NumeroBaños {get;set;}
@@ -430,7 +509,34 @@ public class Propiedades
     public int Cliente {get;set;}
     public int TipoPropiedad {get;set;}
 
-    public Clientes? Cliente {get;set;}
-    public TiposPropiedad _TipoPropiedad {get;set;}
-    public List<Contratos> _Contratos {get;set;}
+    public Clientes? _Clientes {get;set;}
+    public TiposPropiedades? _TipoPropiedad {get;set;}
+    public List<Contratos>? Contratos {get;set;}
+}
+public class Contratos
+{
+    public int Id {get;set;}
+    public DateTime FechaContrato {get;set;}
+    public DateTime? FechaFinalizacion {get;set;}
+    public String?  Obsevaciones {get;set;}
+
+    public decimal PrecioAcordado {get;set;}
+    public String? ArriendoVenta {get;set;}
+    public int Clientes {get;set;}
+    public int Propiedad {get;set;}
+    public int Comprador {get;set;}
+    public int Codeudores {get;set;}
+    public int JefeSector {get;set;}
+
+    public JefesSectores? _JefeSector {get;set;}
+    public Clientes? _Cliente {get;set;}
+    public Propiedades? _Propiedad {get;set;}
+    public Compradores? _Comprador {get;set;}
+    public Codeudores? _Codeudores {get;set;}
+}
+
+public class ContratosEmpleados
+{
+    public int Id {get;set;}
+
 }
