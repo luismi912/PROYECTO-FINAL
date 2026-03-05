@@ -12,6 +12,18 @@ foreach (var Expedientes in Lista_ExpedientesLaborales)
     System.Console.WriteLine(Expedientes.Id + " | " + Expedientes.NombreEmpresa + " | " + Expedientes.Cargo + " | " + Expedientes.SalarioPagado + " | " + Expedientes.FechaIngreso + " | " + Expedientes.FechaEgreso + " | " + Expedientes.Desempeño + " | " + Expedientes.MotivoSalida);
 }
 
+System.Console.WriteLine("DIRECCIONES: ");
+var Lista_Direcciones = new List<Direcciones>();
+Lista_Direcciones.Add(new Direcciones() {Id = 1, TipoVia = "Carrera", Numero = "12a 11-56", Complemento = "Al lado de una tienda de chucherias"});
+Lista_Direcciones.Add(new Direcciones() {Id = 2, TipoVia = "Autopista", Numero = "52c 32-21", Complemento = "Al frente del centro comercial"});
+Lista_Direcciones.Add(new Direcciones() {Id = 3, TipoVia = "Calle", Numero = "52b 11-41", Complemento = "Entre dos teindas"});
+Lista_Direcciones.Add(new Direcciones() {Id = 4, TipoVia = "Carrera", Numero = "21a 8-81", Complemento = "Al lado de una papeleroa"});
+Lista_Direcciones.Add(new Direcciones() {Id = 5, TipoVia = "Callejon", Numero = "38a 81-86", Complemento = "Unica casa ubicada en esa direccion"});
+foreach (var Direccion in Lista_Direcciones)
+{
+    System.Console.WriteLine(Direccion.Id + " | " + Direccion.TipoVia + " | " + Direccion.Numero + " | " + Direccion.Complemento);
+}
+
 System.Console.WriteLine("BIENES MUEBLES: ");
 var Lista_BienesMuebles = new List<BienesMuebles>();
 Lista_BienesMuebles.Add(new BienesMuebles() { Id = 1, Nombre = "Laptop Empresarial", Descripcion = "Portatil para trabajo administrativo", FechaAdquisicion = new DateTime(2023, 5, 10), PrecioCompra = 3500000m, ValorActual = 2800000m, Tipo = "Tecnologico", Modelo = "Dell Latitude 5520", UbicacionActual = "Oficina Principal", Garantia = "2 años", Estado = "Activo" });
